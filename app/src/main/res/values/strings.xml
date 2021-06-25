@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoveMind</string>
+    <string name="what_s_on_your_mind">escriba</string>
+    <string name="menu_refresh">Refresh</string>
+</resources>
