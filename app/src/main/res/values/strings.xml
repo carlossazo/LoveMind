@@ -2,4 +2,18 @@
     <string name="app_name">LoveMind</string>
     <string name="what_s_on_your_mind">escriba</string>
     <string name="menu_refresh">Refresh</string>
+    <string name="textview">TextView</string>
+    <string name="siguiente">siguiente</string>
+
+    <!--arreglos de strings para definir las preguntas y alternativas -->
+<array name="all_questions">
+<item>Pregunta 1?;alternativa 1;*alternativa 2;alternativa 3</item>
+<item>Pregunta 2;a;b;*c</item>
+<item>de que color es mi calzoncillo?;rojo;azul;*amarillo</item>
+</array>
+
+    <!--valor entero que indicara el ponderador para el resultado-->
+<integer name="anxiety_answer">0</integer>
+<integer name="stress_answer">1</integer>
+<integer name="depression_answer">2</integer>
 </resources>

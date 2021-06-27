@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -99,6 +100,7 @@ public class Registro_Activity extends AppCompatActivity {
                             if (task2.isSuccessful()) {
                                 Toast.makeText(Registro_Activity.this, "registro exitoso", Toast.LENGTH_SHORT).show();
 
+                                login(usuario);
                             }
 
 
@@ -112,5 +114,12 @@ public class Registro_Activity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void login(String usuario){
+        Intent intent = new Intent(Registro_Activity.this,loginActivity.class);
+
+        intent.putExtra("usuario",usuario);
+        startActivity(intent);
     }
 }

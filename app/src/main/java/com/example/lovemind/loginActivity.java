@@ -37,6 +37,8 @@ public class loginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        Intent intent = getIntent();
+        userAPP.setText(intent.getStringExtra("usuario"));
         ingresar.setOnClickListener(new View.OnClickListener() {
 
 

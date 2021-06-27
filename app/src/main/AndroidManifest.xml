@@ -20,7 +20,8 @@
         android:roundIcon="@mipmap/ic_face"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registro_Activity"></activity>
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".Registro_Activity" />
         <activity android:name=".loginActivity" />
         <activity
             android:name=".ChatActivity"
