@@ -4,7 +4,7 @@
     android:id="@+id/coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EC3171"
+    android:background="@drawable/fondo"
     android:fitsSystemWindows="true"
     android:outlineAmbientShadowColor="#0B0606"
     android:outlineSpotShadowColor="#000000"

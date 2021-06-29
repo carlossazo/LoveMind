@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Registro_Activity extends AppCompatActivity {
-    TextView userAPP, Password, name, birthday;
+    TextView userAPP, Password, Name, Birthday;
     Button registro;
 
     FirebaseAuth mAuth;
@@ -35,11 +35,11 @@ public class Registro_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        userAPP = findViewById(R.id.user);
+        userAPP = findViewById(R.id.email);
         Password = findViewById(R.id.Password);
-        registro = findViewById(R.id.registro);
-        name = findViewById(R.id.name);
-        birthday = findViewById(R.id.birthday);
+        registro = findViewById(R.id.Register);
+        Name = findViewById(R.id.name);
+        Birthday = findViewById(R.id.Birthday);
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -49,8 +49,8 @@ public class Registro_Activity extends AppCompatActivity {
 
                 String usuario = userAPP.getText().toString();
                 String password = Password.getText().toString();
-                String name = name.getText().toString();
-                String birthday = birthday.getText().toString();
+                String name = Name.getText().toString();
+                String birthday = Birthday.getText().toString();
 
                 if(!usuario.isEmpty() && !password.isEmpty() && !name.isEmpty() && !birthday.isEmpty()) {
                     Log.e("entrar if", userAPP.getText().toString());
@@ -117,7 +117,7 @@ public class Registro_Activity extends AppCompatActivity {
     }
 
     public void login(String usuario){
-        Intent intent = new Intent(Registro_Activity.this,loginActivity.class);
+        Intent intent = new Intent(Registro_Activity.this,MainActivity.class);
 
         intent.putExtra("usuario",usuario);
         startActivity(intent);

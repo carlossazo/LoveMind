@@ -4,16 +4,88 @@
     <string name="menu_refresh">Refresh</string>
     <string name="textview">TextView</string>
     <string name="siguiente">siguiente</string>
+    <string name="finish">finalizar</string>
+    <string name="next">anterior</string>
+
+    <string name="p1">no pareciera presentar algún tipo de problema.</string>
+
+    <string name="p2">Si bien no presenta del todo problemas, presenta algunos, por lo que también
+        es recomendable, aunque no de manera tan urgente asistir con un profesional de la salud
+        mental para que estos problemas no sigan escalando</string>
+
+    <string name="p3">Recomendable dentro de un futuro muy cercano asistir con un profesional
+        de la salud mental, ya que presenta problemas en casi todas las áreas del test</string>
+
 
     <!--arreglos de strings para definir las preguntas y alternativas -->
-<array name="all_questions">
-<item>Pregunta 1?;alternativa 1;*alternativa 2;alternativa 3</item>
-<item>Pregunta 2;a;b;*c</item>
-<item>de que color es mi calzoncillo?;rojo;azul;*amarillo</item>
-</array>
+    <array name="all_questions">
+        <item>¿De estas 3 opciones cual describe de mejor manera tu calidad de sueño últimamente?;
+            Me despierto durante la noche y tengo problemas al dormir;
+            No duermo de lo mejor pero no es algo que me preocupe;
+            Duermo de corrido y amanezco sin cansancio
+        </item>
+
+        <item>¿Cuál de estas opciones describe de mejor manera tu forma de ver la vida?;
+            No me importa, nada, siento que nada vale la pena;
+            No lo siento como un cuento de hadas, pero no es algo que me preocupe;
+            Tengo motivación por salir adelante
+        </item>
+
+        <item>¿Últimamente estas disfrutando de tus hobbies?;
+            No;
+            Un poco;
+            Si
+        </item>
+
+        <item>Si tuvieras que definir tus niveles de energía durante el día ¿En qué rango crees que
+            te encuentras?;
+            0-3;
+            4-7;
+            8-11
+        </item>
+
+        <item>¿Al verte a ti mismo cuál es tu opinión sobre ti?;
+            Un fracaso total;
+            Un ser que sabe confrontar sus problemas;
+            Una persona normal, con virtudes y defectos
+        </item>
+
+        <item>¿Tus pensamientos sobre suicidio son?;
+            Recurrente;
+            Media;
+            Baja o nula
+        </item>
+
+        <item>¿Encuentras problemas inexistentes, en tus relaciones sociales?;
+            Muy seguido;
+            Medianamente;
+            Para nada
+        </item>
+
+        <item>¿Con que frecuencia sientes ganas de llorar?;
+            En todo momento;
+            Mas de lo que quisiera;
+            Muy pocas veces
+        </item>
+
+        <item>¿Durante el último tiempo, con que frecuencias te encuentras de mal humor?;
+            Recurrente;
+            No muy seguido;
+            Para nada
+        </item>
+
+        <item>¿Qué percibes al verte frente un espejo?;
+            Horrible, asqueroso;
+            Atractivo, lindo;
+            Sin importar lo que vea, me siento satisfecho
+        </item>
+
+    </array>
 
     <!--valor entero que indicara el ponderador para el resultado-->
-<integer name="anxiety_answer">0</integer>
-<integer name="stress_answer">1</integer>
-<integer name="depression_answer">2</integer>
+
+    <!--valor 0 = respuesta 1; valor 1 = respuesta 2; valor 2 = pregunta 3-->
+    <integer name="anxiety_answer">0</integer>
+    <integer name="stress_answer">1</integer>
+    <integer name="depression_answer">2</integer>
 </resources>
